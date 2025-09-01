@@ -1,0 +1,25 @@
+[project]
+name = "finagent"
+version = "0.1.0"
+description = "FinancialAgent: Dutch financial assistant orchestrating specialist agents"
+requires-python = ">=3.11"
+readme = "AGENTS.md"
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "I", "PL", "UP", "B", "C4"]
+ignore = []
+
+[tool.pylint.MASTER]
+disable = ["C0114", "C0115", "C0116"]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+reportMissingTypeStubs = true
+reportUnknownMemberType = true
+pythonVersion = "3.11"
+
